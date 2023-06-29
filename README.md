@@ -8,10 +8,6 @@
 - User-friendly interface: The app provides an intuitive and easy-to-use interface for posting messages and interacting with the wall.
 - Firebase integration: Firebase is used for user authentication and data storage, ensuring secure and reliable functionality.
 
-## Screenshots
-
-Include relevant screenshots of your app here to showcase its appearance and functionality.
-
 ## Prerequisites
 
 Before running the app, make sure you have the following:

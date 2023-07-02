@@ -33,7 +33,7 @@ class _ProfilePageState extends State<ProfilePage> {
           autofocus: true,
           style: TextStyle(color: Colors.white),
           decoration: InputDecoration(
-            hintText: 'Enter now $field',
+            hintText: 'Enter new $field',
             hintStyle: TextStyle(color: Colors.grey),
           ),
           onChanged: (value) {

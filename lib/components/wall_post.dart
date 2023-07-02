@@ -6,6 +6,7 @@ import 'package:wall/components/like_button.dart';
 
 import '../helper/helper_methods.dart';
 import 'comment_button.dart';
+import 'delete_button.dart';
 
 class WallPost extends StatefulWidget {
   final String message;
@@ -111,6 +112,58 @@ class _WallPostState extends State<WallPost> {
     }
   }
 
+  // delete a post
+  void deletePost() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Delete Post'),
+        content: Text('Are you sure you want to delete this post?'),
+        actions: [
+          //cancel button
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('Cancel'),
+          ),
+          // Confirm  Button
+          TextButton(
+            onPressed: () async {
+              // delete the comments from firestore first
+              // if you only delete the post, the comments will still store in firestore
+              final commentDocs = await FirebaseFirestore.instance
+                  .collection("User Posts")
+                  .doc(widget.postId)
+                  .collection("Comments")
+                  .get();
+
+              for (var doc in commentDocs.docs) {
+                await FirebaseFirestore.instance
+                    .collection("User Posts")
+                    .doc(widget.postId)
+                    .collection("Comments")
+                    .doc(doc.id)
+                    .delete();
+              }
+
+              // then delete the post
+              FirebaseFirestore.instance
+                  .collection("User Posts")
+                  .doc(widget.postId)
+                  .delete()
+                  .then((value) => print("Post deleted"))
+                  .catchError(
+                      (error) => print("Failed to delete post: $error"));
+
+              // dismiss the dialog box
+              Navigator.pop(context);
+            },
+            child: Text('Delete'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -122,34 +175,45 @@ class _WallPostState extends State<WallPost> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // wall post
-          Column(
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
+            // group of text(message + user email)
             children: [
-              //message
-              Text(widget.message),
-              // user
-              SizedBox(
-                height: 10,
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(widget.message),
+                    // user
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          widget.user,
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                        Text(
+                          " . ",
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                        Text(
+                          widget.time,
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-              Row(
-                children: [
-                  Text(
-                    widget.user,
-                    style: TextStyle(color: Colors.grey[400]),
-                  ),
-                  Text(
-                    " . ",
-                    style: TextStyle(color: Colors.grey[400]),
-                  ),
-                  Text(
-                    widget.time,
-                    style: TextStyle(color: Colors.grey[400]),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
+              // delete button
+              if (widget.user == currentUser.email)
+                DeleteButton(
+                  onTap: deletePost,
+                )
             ],
           ),
           const SizedBox(

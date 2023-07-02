@@ -38,10 +38,6 @@ class Comment extends StatelessWidget {
               " . ",
               style: TextStyle(color: Colors.grey[400]),
             ),
-            Text(
-              time,
-              style: TextStyle(color: Colors.grey[400]),
-            ),
           ],
         )
       ]),

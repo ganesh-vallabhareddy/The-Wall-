@@ -33,7 +33,7 @@ class Comment extends StatelessWidget {
             Text(
               user,
               style: TextStyle(color: Colors.grey[400]),
-            ),
+            )
           ],
         )
       ]),

@@ -50,32 +50,32 @@ Before running the app, make sure you have the following:
 <table>
 
   <tr>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 30_e04bf9ef](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/adf29df8-11f0-4ae8-ac35-4e143c0c3a3a)"></td>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 29_bf3c26b0](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/d6bd98ed-5907-4326-b958-bafd650041ee)"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/adf29df8-11f0-4ae8-ac35-4e143c0c3a3a"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/d6bd98ed-5907-4326-b958-bafd650041ee"></td>
     </td>
   </tr>
  </table>
 <table>
 &nbsp;
   <tr>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 29_bc19fb28](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/a5003ae7-8905-4289-a21d-9554bccde4ad)"></td>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 29_622e555f](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/5ea1824d-5d16-46c7-908c-f8a1e5fdce43)"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/a5003ae7-8905-4289-a21d-9554bccde4ad"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/5ea1824d-5d16-46c7-908c-f8a1e5fdce43"></td>
     </td>
   </tr>
  </table>
 <table>
 
   <tr>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 30_2965e780](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/3b8729ce-0b5a-4452-89ae-3c0389e5c609)"></td>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 30_f6493823](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/448c583d-1455-451d-bee8-9e6436ebd3a7)"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/3b8729ce-0b5a-4452-89ae-3c0389e5c609"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/448c583d-1455-451d-bee8-9e6436ebd3a7"></td>
     </td>
   </tr>
  </table>
 <table>
 &nbsp;
   <tr>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 31_7976550e](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/c988862b-3885-4e2a-8f23-2b5deca746bc)"></td>
-    <td valign="top"><img src="![WhatsApp Image 2024-02-25 at 20 20 31_333f5acd](https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/31daa226-1b5d-4f0a-9836-1eaae52551e3)"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/c988862b-3885-4e2a-8f23-2b5deca746bc"></td>
+    <td valign="top"><img src="https://github.com/ganesh-vallabhareddy/The-Wall-/assets/110174850/31daa226-1b5d-4f0a-9836-1eaae52551e3"></td>
     </td>
   </tr>
  </table>
